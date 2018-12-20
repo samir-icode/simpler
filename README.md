@@ -4,4 +4,4 @@ for developers to spend less time for design their projects more efficiently and
 Project combine css and js packet and all features will be expalined with detailed view.
 All the filess are collected in same html file.
 
-Files will be updated tomorrow for final usage.
+i've used https://www.w3schools.com tutorials for making this project.
