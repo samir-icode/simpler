@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="simpler.css" type="text/css">
+    <title>Simpler</title>
+
+</head>
+<body>
+
+<p>Add <span class="define-code">sim-breadcrumb</span> class for creating breadcrumb</p>
+<div class="d-wid-9">
+    <ul class="sim-breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Username</a></li>
+        <li>User</li>
+    </ul>
+</div>
+<div class="d-wid-9">
+    <hr>
+    <p>Create  <span class="define-code">button</span>with <span class="define-code">sim-acc</span> and <span class="define-code">div</span> with
+        <span class="define-code">sim-panel</span> for creating accordion </p>
+    <div class="d-wid-12">
+        <div class="d-wid-6">
+            <h4>Accordion</h4>
+        </div>
+        <button class="sim-acc">Main</button>
+        <div class="sim-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="sim-acc">Second</button>
+        <div class="sim-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="sim-acc">Third</button>
+        <div class="sim-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <div class="d-wid-12">
+        <hr>
+        <h3>Tab panel</h3>
+        <p>You can remove <span class="define-code">span</span> tag if you don't want to close tab and also you can remove defaultTab id to escape from the
+            opening tab by default</p>
+        <p>You can change <span class="define-code">onclick</span>event to  <span class="define-code">onmouseover</span> to active hover action rather than click</p>
+
+        <div class="d-wid-12">
+                <div class="sim-tab">
+                    <button class="sim-tab-btn" onclick="openTab(event,'tab1')" id="defaultTab">Tab1</button>
+                    <button class="sim-tab-btn" onclick="openTab(event,'tab2')">Tab2</button>
+                    <button class="sim-tab-btn" onclick="openTab(event,'tab3')">Tab3</button>
+                </div>
+                <div id="tab1" class="sim-tab-cont">
+                    <span onclick="this.parentElement.style.display='none'" class="sim-tab-close">&times</span>
+                    <p>This is tab 1</p>
+                </div>
+                <div id="tab2" class="sim-tab-cont">
+                    <span onclick="this.parentElement.style.display='none'" class="sim-tab-close">&times</span>
+                    <p>This is tab 2</p>
+                </div>
+                <div id="tab3" class="sim-tab-cont">
+                    <span onclick="this.parentElement.style.display='none'" class="sim-tab-close">&times</span>
+                    <p>This is tab 3</p>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="d-wid-12">
+        <hr>
+
+        <h3>Tab panel example</h3>
+        <p>Click to see action</p>
+        <div class="sim-v-tab">
+            <button class="sim-v-tab-btn" onclick="openVTab(event,'v-tab1')" id="defaultVTab">Tab1</button>
+            <button class="sim-v-tab-btn" onclick="openVTab(event,'v-tab2')">Tab2</button>
+            <button class="sim-v-tab-btn" onclick="openVTab(event,'v-tab3')">Tab3</button>
+        </div>
+        <div id="v-tab1" class="sim-v-tab-cont">
+            <p>This is vertical tab 1</p>
+        </div>
+        <div id="v-tab2" class="sim-v-tab-cont">
+            <p>This is vertical tab 2</p>
+        </div>
+        <div id="v-tab3" class="sim-v-tab-cont">
+            <p>This is vertical tab 3</p>
+        </div>
+
+
+    </div>
+</div>
+<div class="d-wid-9">
+    <hr>
+    <h4>Switch css</h4>
+    <p>Add  <span class="define-code">sim-slider-info , sim-slider-danger , sim-slider-warning , sim-slider-success</span>  to change switch style</p>
+    <p>Keep only <span class="define-code">sim-slider</span> class for dark switch</p>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider"></span>
+    </label><br><br>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider sim-slider-info"></span>
+    </label><br><br>
+
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider sim-slider-danger"></span>
+    </label><br><br>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider sim-slider-warning"></span>
+    </label><br><br>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider sim-slider-success"></span>
+    </label><br><br>
+
+    <p>Add class <span class="define-code"> round</span> for making rounded switch</p>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider  round"></span>
+    </label><br><br>
+
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider  round sim-slider-info"></span>
+    </label><br><br>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider  round sim-slider-danger"></span>
+    </label><br><br>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider  round sim-slider-warning"></span>
+    </label><br><br>
+    <label class="sim-switch">
+        <input type="checkbox" checked>
+        <span class="sim-slider  round sim-slider-success"></span>
+    </label><br><br>
+</div>
+<div class="d-wid-9">
+    <hr>
+
+    <p>Add  <span class="define-code">slider-info , slider-danger , slider-warning , slider-success</span>  to change ranger style</p>
+    <p>Change <span class="define-code">slider-square</span> to <span class="define-code">slider-round</span> for rounded ranger</p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-square slider-info">
+
+    </div>
+    <br>
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-square slider-danger">
+
+    </div>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-square slider-warning">
+
+    </div>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-square slider-success">
+
+    </div>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-round slider-info">
+
+    </div>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-round slider-danger">
+
+    </div>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-round slider-warning">
+
+    </div>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider-round slider-success">
+
+    </div>
+</div>
+<div class="d-wid-9">
+    <hr>
+    <p>Modal </p>
+    <button id="simBtn" class="danger">Open Modal</button>
+    <p>Change modal header class to <span class="define-code">sim-modal-header-danger,sim-modal-header-warning , sim-modal-header-success</span>
+        and change  modal footer class to <span class="define-code">sim-modal-footer-danger,sim-modal-footer-warning , sim-modal-footer-success </span> to see the cahnges in modal
+    </p>
+    <!-- The Modal -->
+    <div id="simModal" class="sim-modal">
+
+        !-- Modal content -->
+        <div class="sim-modal-content">
+            <div class="sim-modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Normal Header</h2>
+            </div>
+            <div class="sim-modal-body">
+                <p>Some text in the Modal Body</p>
+
+
+                <div class="sim-flip-box">
+                    <div class="sim-flip-box-inner">
+                        <div class="sim-flip-box-front">
+                            <img src="image.jpg" alt="View" style="width:300px;height:200px">
+                        </div>
+                        <div class="sim-flip-box-back">
+                            <h2>Sightseeing</h2>
+                            <p>Amazing view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sim-modal-footer">
+                <h3>Modal Normal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="d-wid-9">
+    <p>Create id <span class="define-code">simDragDiv</span> foe draggable item</p>
+    <div id="simDragDiv">
+        <div id="simDragHeader">Move whereever you want</div>
+        <p>Draggable div</p>
+    </div>
+    <br><br><br><br><br>
+</div>
+
+
+
+<div class="d-wid-12">
+
+<div class="d-wid-12">
+    <hr>
+    <h3>Slideshow</h3>
+    <div class="slideshow-container">
+
+        <div class="simSlides fadeX">
+            <div class="right-img"><img src="image2.jpg" style="width:100%; height: 10%;"> </div>
+            <img src="image.jpg" style="width:100%">
+            <div class="caption">Lorem ipsum dolar sit amet</div>
+            <div class="left-img"><img src="CG7AWxtWQAA8amE.jpg" style="width:100%; height: 10%;"> </div>
+        </div>
+
+        <div class="simSlides fadeX">
+            <div class="right-img"><img src="image.jpg" style="width:100%; height: 10%;">  </div>
+            <img src="CG7AWxtWQAA8amE.jpg" style="width:100%">
+            <div class="caption">Lorem ipsum dolar sit amet</div>
+            <div class="left-img"><img src="image2.jpg" style="width:100%; height: 10%;"> </div>
+        </div>
+
+        <div class="simSlides fadeX">
+            <div class="right-img"><img src="CG7AWxtWQAA8amE.jpg" style="width:100%; height: 10%;"> </div>
+            <img src="image2.jpg" style="width:100%">
+            <div class="caption">Lorem ipsum dolar sit amet</div>
+            <div class="left-img"><img src="image.jpg" style="width:100%; height: 10%;"> </div>
+        </div>
+
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="simNav" onclick="currentSlide(1)"></span>
+        <span class="simNav" onclick="currentSlide(2)"></span>
+        <span class="simNav" onclick="currentSlide(3)"></span>
+    </div>
+    <p>Change class  <span class="define-code">fadeX</span> to <span class="define-code">fadeY</span> and see different effect in slideshow</p>
+</div>
+
+<div class="d-wid-12">
+    <hr>
+    <div class="img-magnifier-container">
+        <img id="myimage" class="img-resp" src="image.jpg" >
+    </div>
+</div>
+
+</div>
+
+<div class="d-wid-9">
+    <button class="open-sim-button-right" onclick="openForm()">Send Feedback</button>
+
+    <div class="sim-popup-bottom-right" id="myForm">
+        <form class="sim-form-container">
+            <h1>Send Feedback</h1>
+
+            <label><b>Email</b></label>
+            <input class="plc" type="text" placeholder="Enter Email" name="email" required>
+
+            <label><b>Name</b></label>
+            <input class="plc" type="text" placeholder="Enter Password" name="psw" required>
+
+
+            <textarea  placeholder="Enter your opinion" class="sim-txt-area plc" name="" id="" cols="40" rows="10"></textarea>
+
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="simpler.js" type="text/javascript"></script>
+
+<script>
+    /* Initiate Magnify Function
+    with the id of the image, and the strength of the magnifier glass:*/
+    magnify("myimage", 2);
+</script>
